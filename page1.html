@@ -76,6 +76,27 @@
            var element = document.body;
            element.classList.toggle("dark-mode");
         }
+        <div class="chat-container">
+        <div class="chat-header">
+          <button class="chat-toggle">Chat</button>
+        </div>
+        <div class="chat-content">
+          <iframe src='https://webchat.botframework.com/embed/AwarenessOnCyberCrimesUsingCyberLaws-bot?s=4qKjiKSbK6Y.adUtqclpVQJt729pnCc75DAahr9bS3n82jeienoHphQ'
+            style='min-width: 250px; width: 100%; min-height: 250px;'></iframe>
+        </div>
+      </div>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var chatContainer = document.querySelector('.chat-container');
+          var chatToggle = document.querySelector('.chat-toggle');
+      
+          chatToggle.addEventListener('click', function() {
+            chatContainer.classList.toggle('open');
+          });
+        });
+      </script>
+
      </script>
     
 </body>
